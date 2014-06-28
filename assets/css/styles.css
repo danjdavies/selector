@@ -1,0 +1,327 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.wf-loading h1,
+.wf-loading h2,
+.wf-loading h3,
+.wf-loading h4,
+.wf-loading p
+{
+    visibility: hidden;
+}
+
+.wf-active h1,
+.wf-active h2,
+.wf-active h3,
+.wf-active h4,
+.wf-active p
+{
+	visibility: visible;
+}
+
+body
+{
+	margin: 0;
+	font-family: "news-gothic-std",sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+
+h1,h2,h3,h4
+{
+	font-weight: 700;
+	font-style: normal;
+	color: rgb(51,51,51);
+	font-family: "alternate-gothic-no-2-d",sans-serif;
+}
+
+h1
+{
+	font-size: 70px;
+	text-transform: uppercase;
+	margin: 0 0 0.5em 0;
+}
+
+h2
+{
+	font-size: 40px;
+	margin: 0.5em 0 0.25em;
+}
+
+h3
+{
+	font-size: 30px;
+	text-transform: uppercase;
+}
+
+p
+{
+	font-size: 16px;
+	color: rgb(51,51,51);
+	margin-bottom: 1em;
+	line-height: 22px;
+}
+
+a
+{
+	color: #8a0a0a;
+	text-decoration: underline;
+}
+
+a:hover
+{
+	text-decoration: none;
+}
+
+h2 + p
+{
+	letter-spacing: 0.1em;
+	color: #999;
+	margin-bottom: 1em
+}
+
+.wrapper
+{
+	padding: 0 20px;
+}
+
+.project
+{
+	background: rgb(248,248,248);
+	padding: 60px 20px;
+	border: 1px solid #ededed;
+	margin-bottom: 40px;
+	overflow: hidden;
+}
+
+
+.project div
+{
+}
+
+.project img
+{
+	width: 100%;
+	margin-bottom: 2em;
+}
+
+.project .wrapper
+{
+	width: 100%;
+	padding: 0;
+	margin: auto;
+	float: none;
+}
+
+header
+{
+	padding: 20px 40px;
+}
+
+.logo
+{
+	text-decoration: none;
+	color: rgb(51,51,51);
+}
+
+#header-img
+{
+	background: url(../images/header-img-mb.jpg) 0 0 no-repeat;
+	height: 250px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#introduction, #about
+{
+	text-align: center;
+	padding: 50px 0;
+}
+
+.logo-animated
+{
+	margin: 0 0 30px 0;
+}
+
+#introduction article, #about article
+{
+	width: 80%;
+	margin: auto;
+}
+
+#about h2 + p
+{
+	letter-spacing: 0em;
+	font-size: 16px;
+	color: rgb(51,51,51);
+	margin-bottom: 1em;
+	line-height: 22px;
+}
+
+footer
+{
+	background: rgb(51,51,51);
+	padding: 20px;
+	text-align: center;
+	margin-top: 1px;
+}
+
+footer p 
+{
+	color: #fff;
+	font-size: 14px;
+}
+
+.copyright
+{
+	font-size: 12px;
+	margin-top: 40px;
+}
+
+
+@media screen and (min-width: 768px){
+
+	#header-img
+	{
+		background: url(../images/header-img-tab.jpg) 0 0 no-repeat;
+		height: 400px;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+
+#introduction, #about
+	{
+		padding: 150px 0;
+	}
+
+	.wrapper
+	{
+		padding: 0 40px;
+		width: 90%;
+		margin: auto;
+
+	}
+
+	.project .wrapper
+	{
+		width: 90%;
+		padding: 0;
+		margin: auto;
+		float: none;
+	}
+
+	.project div
+	{
+		width: 48%;
+		float: right;
+	}
+
+	.project img
+	{
+		width: 48%;
+		float: left;
+	}
+
+	#introduction article, #about article
+	{
+		width: 80%;
+		margin: auto;
+	}
+
+	.project
+	{
+		opacity: 0.7;
+		-webkit-transition: all 1s ease;
+	    -moz-transition: all 1s ease;
+	}
+
+	.project:hover
+	{
+		opacity: 1;
+	}
+
+}
+
+@media screen and (min-width: 940px){
+
+	#header-img
+	{
+		background: url(../images/header-img.jpg) 0 0 fixed no-repeat;
+		height: 500px;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+
+#introduction article, #about article
+	{
+		width: 50%;
+		margin: auto;
+	}
+
+	.project .wrapper
+	{
+		width: 75%;
+	}
+
+	.wrapper
+	{
+		width: 70%;
+	}
+
+}
+
+
+
